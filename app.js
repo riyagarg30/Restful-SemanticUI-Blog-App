@@ -13,7 +13,7 @@ app.use(expressSanitizer());
 app.use(methodOverride("_method"));
 
 
-mongoose.connect('mongodb://localhost/semantic_blog', {
+mongoose.connect('mongodb+srv://riyagarg30:rg3005pass@cluster0.y5py7.mongodb.net/SemanticUIBlogApp?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
