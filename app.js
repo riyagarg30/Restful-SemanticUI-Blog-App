@@ -136,7 +136,7 @@ app.delete('/blogs/:id', (req, res) => {
     });
 });
 
-
-app.listen(3000, () => {
+var port = process.env.PORT || 3000;
+app.listen(port, () => {
     console.log('App listening on port 3000!');
 });
