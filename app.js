@@ -13,7 +13,18 @@ app.use(expressSanitizer());
 app.use(methodOverride("_method"));
 
 
-mongoose.connect('mongodb+srv://riyagarg30:rg3005pass@cluster0.y5py7.mongodb.net/SemanticUIBlogApp?retryWrites=true&w=majority', {
+//heroku database
+//"mongodb+srv://riyagarg30:rg3005pass@cluster0.y5py7.mongodb.net/SemanticUIBlogApp?retryWrites=true&w=majority"
+// mongoose.connect("mongodb+srv://riyagarg30:rg3005pass@cluster0.y5py7.mongodb.net/SemanticUIBlogApp?retryWrites=true&w=majority", {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+//   })
+//   .then(() => console.log('Connected to DB!'))
+//   .catch(error => console.log(error.message));
+
+
+//local database
+mongoose.connect('mongodb://localhost/semantic_blog', {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
